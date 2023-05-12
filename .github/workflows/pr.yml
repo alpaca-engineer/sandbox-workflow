@@ -2,7 +2,7 @@ name: Pull Request Test
 
 on:
   pull_request:
-    branches: [ feature ]
+    branches: [ "feature/**" ]
     types: [ opened, synchronize, reopened ]
     paths-ignore:
       - 'docs/**'
