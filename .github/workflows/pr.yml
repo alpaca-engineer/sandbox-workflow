@@ -4,6 +4,9 @@ on:
   pull_request:
     branches: [ feature ]
     types: [ opened, synchronize, reopened ]
+    paths-ignore:
+      - 'docs/**'
+
 
 jobs:
   test:
