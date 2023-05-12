@@ -2,10 +2,10 @@ name: Pull Request Test
 
 on:
   pull_request:
-    branches: [ feature ]
+    branches: [ main ]
     types: [ opened, synchronize, reopened ]
-    paths-ignore:
-      - 'docs/**'
+    paths-ignore: # なぜか上手く機能しない
+      - '**.md'
 
 
 jobs:
@@ -18,5 +18,5 @@ jobs:
     timeout-minutes: 1
   
     steps:
-      - run: exit 1 # intentionally fail
+      - run: exit 0 # intentionally fail
       - uses: actions/checkout@v3
