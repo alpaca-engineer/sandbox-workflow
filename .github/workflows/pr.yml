@@ -4,6 +4,7 @@ on:
   pull_request:
     branches:
       - "feature/**"
+      - main
     # branches: [ "feature/**" ]
     types: [ opened, synchronize, reopened ]
     paths-ignore:
