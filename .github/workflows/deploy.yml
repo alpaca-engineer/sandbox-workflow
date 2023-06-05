@@ -1,0 +1,16 @@
+name: (dummy) Deploy
+
+on:
+#   push:
+#     branches:
+#       - develop
+  # GUI/GitHub CLIからの実行を許可する
+  workflow_dispatch:
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    # 実際はここにSSHの設定とか、サーバ上で実行するコマンドを書く
+    steps:
+      - name: deploy
+        run: echo "Preparing to deploying"
